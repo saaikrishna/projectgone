@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User form</title>
+<style>
+body,html{
+background-image:url("1.jpg");background-repeat:no-repeat;background-position:center; background-size: 1050px 1050px;}
+#header{
+height:15%;width:100%;font-family:arial;text-align:center;color:white;
+}
+#rightdiv{
+height:85;width:60%;font-family:garamond;color:white;float:right;text-align:left;
+}
+
+input[type=text], select {
+  width: 100%;
+  background-color: white;
+  padding: 5px 5px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type=number], select {
+  width: 100%;
+  background-color: white;
+  padding: 5px 5px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width:100%;
+  background-color: white;
+  padding: 5px 5px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type=button] {
+  width: 100%;
+  background-color: white;
+  color: white;
+  padding: 5px 5px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type=button]{
+  background-color: aqua;
+}
+
+</style>
+</head>
+<body>
+
+<div id="header"><h2>User Registration </h2></div>
+<div id="rightdiv">
+  <form>
+  <table style="text-align:center">
+  <tr>
+    <td><label for="firstname"><h3>First Name</h3></label></td>
+    <td><input type="text" id="firstname" name="firstname" placeholder="Your first name.." required/></td>
+</tr>
+<tr>
+    <td><label for="lastname"><h3>Last Name</h3></label></td>
+    <td><input type="text" id="lastname" name="lastname" placeholder="Your last name.." required/></td>
+    </tr>
+    <tr>
+     <td><label for="age"><h3>Age</h3></label></td>
+    <td><input type="number" id="age" name="age" placeholder="Your age.." required/></td>
+</tr>
+<tr>
+    <td><label for="gender"><h3>Gender</h3></label></td>
+   <td> <select id="gender" name="gender">
+      <option value="1"> </option>
+      <option value="2">Male</option>
+      <option value="3">Female</option>
+      <option value="4">Others</option>
+    </select></td>
+    </tr>
+    <tr>
+     <td><label for="contactnumber"><h3>Contact</h3></label></td>
+   <td><input type="number" id="cnumber" name="cnumber" placeholder="Your contact number.." required/></td>
+    </tr>
+    <tr>
+    <td><label for="username"><h3>User Id</h3></label></td>
+    <td><input type="text" id="username" name="username" placeholder="Your User Id.." required/></td>
+    </tr>
+    <tr>
+    <td><label for="password"><h3>Password</h3></label></td>
+    <td><input type="password" id="password" name="password" placeholder="Your Password.." required></td>
+  </tr>
+  <tr>
+    <td><input type="button" value="Submit" name="submit" id="submit"/></td>
+    </tr>
+    </table>
+  </form>
+  </div>
+
+
+</body>
+</html>
+
